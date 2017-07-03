@@ -14,7 +14,7 @@
 
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" /><link rel="stylesheet" type="text/css" href="css/componentQUOTE.css" />
 		<link rel="stylesheet" type="text/css" href="css/componentHead.css" />
         <link rel="stylesheet" type="text/css" href="css/demoLOGO.css" />
 		<link rel="stylesheet" type="text/css" href="css/componentLOGO.css" />
@@ -43,12 +43,15 @@
                 height: 100px;
             }
             
-            .offset:before { 
+            .offset:before{ 
                 display: block; 
                 content: " "; 
                 height: 150px;      
                 margin-top: -150px;
                 visibility: hidden; 
+            }
+            .container{
+                text-align: justify;
             }
         </style>
 	</head>
@@ -89,11 +92,44 @@
                     <h3 id="visionLink" class="offset">Vision</h3>
                     <p>Towards  career perfection and contribute to society.</p>
                     <h3 id="missionLink" class="offset">Mission</h3>
-                    <blockquote>To  carve / orient a generation of highly motivated , employable and socially sensitive  student community through constant guidance/mentoring , thereby preparing them to succeed in a challenging  and demanding arena/ environment</blockquote>
+                    <blockquote style="text-align:left">To  carve / orient a generation of highly motivated , employable and socially sensitive  student community through constant guidance/mentoring , thereby preparing them to succeed in a challenging  and demanding arena/ environment</blockquote>
                 </div>
             </article>
         </div>
         </div>
+        
+        <div class="container">
+            
+			<div class="main">
+                <header class="header">
+                    <div class="title" >
+                        <p class="subline" style="color:#108576">Notifications</p>
+                    </div>
+                </header>
+                <article class="content">
+                    <div id="cbp-qtrotator" class="cbp-qtrotator">
+                        <div class="cbp-qtcontent">
+                            <img src="img/1.jpg" alt="img01" />
+                              <p>News 1 . Sample Text paragraph.The Career Guidance Cell  facilitates the students to explore the world of employment and new career avenues.</p>
+                        </div>
+                        <div class="cbp-qtcontent">
+                            <img src="img/2.jpg" alt="img02" />
+                              <p>News 2 .It also helps students in career planning through counseling where in they gather information about themselves in terms of their interests, aptitudes and other abilities so that they can choose their career more effectively. </p>
+                        </div>
+                        <div class="cbp-qtcontent">
+                            <img src="img/3.jpg" alt="img03" />
+                              <p>News 3. The objective of the Cell is also on the professional development of the students by training them towards employability skills with personality development training ,motivational talks, counseling , etc.. </p>
+                        </div>
+                        <div class="cbp-qtcontent">
+                            <img src="img/5.jpg" alt="img04" />
+                              <p>News 4 .The cell has state-of-the-art facilities that make campus recruitment a pleasant experience. Student placement representatives from each class are also present to provide assistance throughout the selection process.</p>
+                        </div>
+                    </div>
+                </article>
+			</div>
+		</div>
+        
+        
         <div class="demo-4">
         <div id="container" class="container">
             <header class="header">
@@ -111,7 +147,7 @@
                     <h3>2.  Pre- placement Talks</h3>
                     <p>The Pre-placement talks shall be conducted , if asked by the recruiter , prior to the beginning of the Pre Interview screening .This is to facilitates interaction between the students and the potential recruiters.</p>
                     <h3>3.	Pre Interview Screening</h3>
-                    <p>The Non-Nitrogenous Organic Compounds are commonly called carbon compounds or heat-producers, but these terms are also descriptive of the nitrogenous compounds. These contain carbon, hydrogen and oxygen only, and furnish by their oxidation or combustion in the body the necessary heat, muscular and nervous energy. The final product of their combustion is water and carbon dioxide (carbonic acid gas).</p>
+                    <p><li>The procedure for pre Interview screening ( if any )is recruiters own policy.</li><li>The applicants selected in the pre interviews screening shall qualify for appearing in the final Interviews.</li></p>
                     <h3>4.  The Final Interview</h3>
                     <p>List shall be made as per the recruiters recruitment policy, or according to the results of the Pre-Interview Screening conducted by the Recruiter.</p>
                     <h3>5.	Final Offer</h3>
@@ -274,6 +310,12 @@
 		<script src="js/classie.js"></script>
         <script src="js/jquery-ui.min.js"></script>
         <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.cbpQTRotator.min.js"></script>
+		<script>
+			$( function() {
+				$( '#cbp-qtrotator' ).cbpQTRotator();
+			} );
+		</script>
 		<script>
 			(function() {
 
